@@ -2,16 +2,16 @@
 import React, { useEffect, useState } from 'react';
 
 // Define the shape of header content
-interface HeaderCont {
-    head1: string;
-    head2: string;
-}
-
-// Define the props for the HeaderAll component
-interface HeaderAllProps {
+type HeaderCont = {
+    head1: JSX.Element;
+    head2: JSX.Element;
+  };
+  
+  interface HeaderAllProps {
     headerCont: HeaderCont;
-}
-
+  }
+  
+  
 const HeaderAll: React.FC<HeaderAllProps> = ({ headerCont }) => {
     const targetDate = new Date('2025-04-30T00:00:00').getTime();
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -34,7 +34,7 @@ const HeaderAll: React.FC<HeaderAllProps> = ({ headerCont }) => {
         }, 1000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [targetDate]);
 
     return (
         <div>

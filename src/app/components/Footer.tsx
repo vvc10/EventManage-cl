@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button } from './ui/button'
+import Link from 'next/link'
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8">
