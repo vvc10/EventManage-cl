@@ -3,7 +3,7 @@ import Navbar from "@/app/components/Navbar";
 import '../app/globals.css';
 import Image from "next/image";
 import { useRef } from "react";
-import Footer from "@/app/components/footer";
+import Footer from "@/app/components/Footer";
 // src/pages/about.tsx
 const AboutPage: React.FC = () => {
     const about = "ABOUT";

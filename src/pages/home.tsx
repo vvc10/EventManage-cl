@@ -7,7 +7,8 @@ import { useState, useRef } from 'react';
 import { IoIosArrowForward } from "react-icons/io";
 import Navbar from '../app/components/Navbar';
 import HeaderAll from '../app/components/HeaderAll';
-import Footer from '@/app/components/footer';
+import Footer from "@/app/components/Footer";
+
 const ConventionPage: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isSidebarOpen, setSidebarOpen] = useState(false);
